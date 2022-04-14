@@ -1,0 +1,52 @@
+{
+	"name": "rtxt",
+	"version": "1.0.0",
+	"description": "Transforming HTML tag inside the text into React components",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"test": "vitest run",
+		"build": "tsup"
+	},
+	"keywords": [
+		"react"
+	],
+	"author": "Muhammad Yusuf <yusuf@iamyuu.dev> (https://iamyuu.dev/)",
+	"license": "MIT",
+	"peerDependencies": {
+		"react": ">=15.6.1"
+	},
+	"devDependencies": {
+		"@testing-library/react": "13.0.1",
+		"@vitejs/plugin-react": "1.3.1",
+		"happy-dom": "2.55.0",
+		"react": "18.0.0",
+		"tsup": "5.12.5",
+		"typescript": "4.6.3",
+		"vitest": "0.9.3"
+	},
+	"tsup": {
+		"entry": [
+			"index.tsx"
+		],
+		"format": [
+			"cjs",
+			"esm"
+		],
+		"dts": true,
+		"clean": true
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/iamyuu/rtxt"
+	},
+	"bugs": {
+		"url": "https://github.com/iamyuu/rtxt/issues"
+	},
+	"homepage": "https://github.com/iamyuu/rtxt",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	}
+}
